@@ -29,14 +29,14 @@ mobileMenu.querySelectorAll('.nav__mobile-link').forEach(link => {
 
 // ===== SCROLL ANIMATIONS (IntersectionObserver) =====
 const animatedEls = document.querySelectorAll(
-  '.spot-card, .vessel__feature, .timeline__item, .review-card, .pricing-card, .snorkel__card, .about__text, .about__visual, .booking__info, .booking__form-wrap'
+  '.spot, .vessel__feature, .timeline__item, .review, .pricing-card, .modality, .about__text, .about__visual, .booking__info, .booking__form-wrap'
 );
 
-animatedEls.forEach(el => el.classList.add('fade-up'));
+animatedEls.forEach(el => el.classList.add('fade-in'));
 
 const observer = new IntersectionObserver(
   entries => {
-    entries.forEach((entry, i) => {
+    entries.forEach(entry => {
       if (entry.isIntersecting) {
         setTimeout(() => {
           entry.target.classList.add('visible');
@@ -45,11 +45,11 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+  { threshold: 0.08, rootMargin: '0px 0px -32px 0px' }
 );
 
 animatedEls.forEach((el, i) => {
-  el.dataset.delay = (i % 4) * 80;
+  el.dataset.delay = (i % 4) * 70;
   observer.observe(el);
 });
 
@@ -70,13 +70,13 @@ form.addEventListener('submit', e => {
 
   // Build WhatsApp message
   const modalityMap = {
-    snorkel: 'Passeio + Snorkel (R$ 290/pessoa)',
-    mergulho: 'Passeio + Mergulho com Cilindro (R$ 490/pessoa)',
-    privativo: 'Barco Privativo'
+    snorkel: 'Passeio + Snorkel — R$ 200/pessoa',
+    mergulho: 'Passeio + Mergulho com Cilindro — R$ 350/pessoa',
+    privativo: 'Grupo Privativo — sob consulta'
   };
 
   const waText = encodeURIComponent(
-    `Olá! Quero reservar um passeio no Barco Payos.\n\n` +
+    `Olá! Quero reservar uma experiência em Búzios Snorkel.\n\n` +
     `👤 Nome: ${name}\n` +
     `📅 Data: ${date}\n` +
     `👥 Pessoas: ${people}\n` +
