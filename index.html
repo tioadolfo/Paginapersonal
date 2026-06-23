@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barco Payos – Passeios de Snorkel e Mergulho em Búzios</title>
+  <meta name="description" content="Passeios de barco em Búzios com snorkel e mergulho. 3 horas explorando as praias mais bonitas: Tartaruga, Azeda, João Fernandes, Ilha Feia e Ilha Branca. Churrasco, bebidas e muito mais." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-icon">⚓</span>
+        <span>Barco <strong>Payos</strong></span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#passeio">O Passeio</a></li>
+        <li><a href="#pontos">Destinos</a></li>
+        <li><a href="#barco">O Barco</a></li>
+        <li><a href="#snorkel">Snorkel & Mergulho</a></li>
+        <li><a href="#reservar" class="nav__cta">Reservar</a></li>
+      </ul>
+      <button class="nav__burger" id="burger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#passeio" class="nav__mobile-link">O Passeio</a>
+      <a href="#pontos" class="nav__mobile-link">Destinos</a>
+      <a href="#barco" class="nav__mobile-link">O Barco</a>
+      <a href="#snorkel" class="nav__mobile-link">Snorkel & Mergulho</a>
+      <a href="#reservar" class="nav__mobile-link nav__mobile-cta">Reservar Agora</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__ocean"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__bubbles">
+      <div class="bubble bubble--1"></div>
+      <div class="bubble bubble--2"></div>
+      <div class="bubble bubble--3"></div>
+      <div class="bubble bubble--4"></div>
+      <div class="bubble bubble--5"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Armação dos Búzios · Rio de Janeiro</p>
+      <h1 class="hero__title">Mergulhe no<br /><span class="hero__title-highlight">Paraíso</span> de Búzios</h1>
+      <p class="hero__subtitle">3 horas de passeio pelo mar cristalino · Snorkel · Churrasco · Boa música · Cerveja gelada</p>
+      <div class="hero__badges">
+        <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 3 horas</span>
+        <span class="badge">🐠 3 paradas de snorkel</span>
+        <span class="badge">🔥 Churrasco incluso</span>
+        <span class="badge">🍺 Bebidas a bordo</span>
+      </div>
+      <div class="hero__actions">
+        <a href="#reservar" class="btn btn--primary">Reservar Agora</a>
+        <a href="#passeio" class="btn btn--ghost">Saiba mais</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE A EMPRESA ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__visual">
+          <div class="about__img-wrap">
+            <div class="about__img about__img--main"></div>
+            <div class="about__img about__img--accent"></div>
+          </div>
+          <div class="about__badge-float">
+            <span class="about__years">+10</span>
+            <span>anos em Búzios</span>
+          </div>
+        </div>
+        <div class="about__text">
+          <span class="section-tag">Nossa história</span>
+          <h2 class="section-title">O Barco Payos nasce do amor pelo mar de Búzios</h2>
+          <p>O <strong>Barco Payos</strong> tem raízes profundas nas águas de Búzios. Com DNA da <strong>Vídeo Azul Profundo</strong> – referência em mergulho e exploração subaquática na região – o Payos carrega a expertise de quem conhece cada recife, cada banco de coral e cada cardume que habita este mar privilegiado.</p>
+          <p>Hoje somos uma empresa dedicada exclusivamente ao turismo náutico de excelência. Cada passeio é guiado por um <strong>capitão experiente e certificado</strong>, com paradas estratégicas nos pontos mais deslumbrantes do arquipélago búziano, onde você pode praticar snorkel ou mergulho com cilindro.</p>
+          <ul class="about__list">
+            <li><span class="check">✓</span> Equipe certificada em mergulho e salvamento</li>
+            <li><span class="check">✓</span> Todos os equipamentos de segurança a bordo</li>
+            <li><span class="check">✓</span> Guias bilíngues (Português / Español / English)</li>
+            <li><span class="check">✓</span> Parceiro oficial do Parque de Corais de João Fernandes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== O PASSEIO ===== -->
+  <section class="tour" id="passeio">
+    <div class="tour__bg"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag section-tag--light">O Passeio</span>
+        <h2 class="section-title section-title--light">3 horas de pura aventura no Atlântico</h2>
+        <p class="section-subtitle">Partimos do cais de Armação dos Búzios e navegamos pelas praias e ilhas mais bonitas da Península. Cada parada foi escolhida a dedo pelas águas cristalinas e pela rica biodiversidade marinha.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__icon">🛳️</div>
+          <div class="timeline__content">
+            <span class="timeline__time">08:30</span>
+            <h3>Embarque no Porto Veleiro</h3>
+            <p>Recepção da equipe, check-in e briefing de segurança. Bebidas de boas-vindas a bordo.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__icon">🐠</div>
+          <div class="timeline__content">
+            <span class="timeline__time">1ª Parada · ~30 min</span>
+            <h3>Snorkel & Mergulho</h3>
+            <p>Primeira parada em ponto de mergulho com equipamento completo de snorkel. Nossas águas têm visibilidade de até 15 metros.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__icon">🔥</div>
+          <div class="timeline__content">
+            <span class="timeline__time">Navegando · ~45 min</span>
+            <h3>Churrasco e Música</h3>
+            <p>Enquanto navegamos de uma parada a outra, a churrasqueira vai aquecendo! Carne, linguiça, frango, cerveja gelada e boa música.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__icon">🏝️</div>
+          <div class="timeline__content">
+            <span class="timeline__time">2ª & 3ª Parada</span>
+            <h3>Praias e Ilhas Paradisíacas</h3>
+            <p>Mais dois pontos de parada para nadar, fazer snorkel ou simplesmente contemplar a natureza exuberante de Búzios.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__icon">⚓</div>
+          <div class="timeline__content">
+            <span class="timeline__time">11:30</span>
+            <h3>Retorno ao Porto</h3>
+            <p>Chegada tranquila ao Porto Veleiro com memórias incríveis e, talvez, um novo amor pelo fundo do mar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DESTINOS ===== -->
+  <section class="spots" id="pontos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Destinos</span>
+        <h2 class="section-title">As joias do litoral búziano</h2>
+        <p class="section-subtitle">Escolhemos 3 pontos de parada entre esses destinos exclusivos a cada dia, de acordo com as condições do mar e a melhor experiência para o grupo.</p>
+      </div>
+      <div class="spots__grid">
+        <div class="spot-card spot-card--tartaruga">
+          <div class="spot-card__img"></div>
+          <div class="spot-card__body">
+            <div class="spot-card__tags">
+              <span class="tag tag--snorkel">🤿 Snorkel</span>
+              <span class="tag tag--swim">🏊 Natação</span>
+            </div>
+            <h3>Praia da Tartaruga</h3>
+            <p>Famosa pelas tartarugas marinhas que aninhavam aqui, esta praia de 2 km tem águas verdes e transparentes, ideais para observar corais coloridos e peixes tropicais. Um dos pontos mais fotogênicos de Búzios.</p>
+            <div class="spot-card__info">
+              <span>🌊 Águas calmas</span>
+              <span>🐢 Vida marinha rica</span>
+            </div>
+          </div>
+        </div>
+        <div class="spot-card spot-card--azeda">
+          <div class="spot-card__img"></div>
+          <div class="spot-card__body">
+            <div class="spot-card__tags">
+              <span class="tag tag--snorkel">🤿 Snorkel</span>
+              <span class="tag tag--exclusive">✨ Exclusiva</span>
+            </div>
+            <h3>Praia de Azeda</h3>
+            <p>Uma pérola escondida entre rochas, com água cristalina de tom esverdeado. A pequena praia de Azeda e sua irmã Azedinha são acessíveis principalmente pelo mar, garantindo um ambiente preservado e íntimo.</p>
+            <div class="spot-card__info">
+              <span>🪸 Corais próximos</span>
+              <span>🤍 Pouco frequentada</span>
+            </div>
+          </div>
+        </div>
+        <div class="spot-card spot-card--joao">
+          <div class="spot-card__img"></div>
+          <div class="spot-card__body">
+            <div class="spot-card__tags">
+              <span class="tag tag--snorkel">🤿 Snorkel</span>
+              <span class="tag tag--dive">🥽 Mergulho</span>
+            </div>
+            <h3>João Fernandes</h3>
+            <p>Lar do <strong>Parque de Corais</strong> de Búzios. Junto com instrutores certificados, você pode explorar a vida subaquática em profundidades de até 10m, observando arraias, polvos e cardumes coloridos.</p>
+            <div class="spot-card__info">
+              <span>🐡 Parque de Corais</span>
+              <span>📸 Fotografia submarina</span>
+            </div>
+          </div>
+        </div>
+        <div class="spot-card spot-card--feia">
+          <div class="spot-card__img"></div>
+          <div class="spot-card__body">
+            <div class="spot-card__tags">
+              <span class="tag tag--dive">🥽 Mergulho</span>
+              <span class="tag tag--advanced">🔵 Avançado</span>
+            </div>
+            <h3>Ilha Feia</h3>
+            <p>A Ilha Feia é um dos destinos preferidos dos mergulhadores mais experientes. Formações rochosas imponentes e um ecossistema submarino de tirar o fôlego, com visibilidade excepcional nas épocas certas.</p>
+            <div class="spot-card__info">
+              <span>🐠 Fauna diversificada</span>
+              <span>🌊 Mergulho com cilindro</span>
+            </div>
+          </div>
+        </div>
+        <div class="spot-card spot-card--branca">
+          <div class="spot-card__img"></div>
+          <div class="spot-card__body">
+            <div class="spot-card__tags">
+              <span class="tag tag--snorkel">🤿 Snorkel</span>
+              <span class="tag tag--scenic">🌅 Vista panorâmica</span>
+            </div>
+            <h3>Ilha Branca</h3>
+            <p>Ilha de areia branca que emerge do mar como um sonho. Águas rasas e quentes ao redor permitem exploração com snorkel em toda a extensão. A paisagem é um cartão-postal de Búzios.</p>
+            <div class="spot-card__info">
+              <span>🏖️ Praia de areia branca</span>
+              <span>☀️ Águas rasas e quentes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== O BARCO ===== -->
+  <section class="vessel" id="barco">
+    <div class="container">
+      <div class="vessel__grid">
+        <div class="vessel__text">
+          <span class="section-tag">A bordo</span>
+          <h2 class="section-title">O Barco Payos: conforto e tradição no mar de Búzios</h2>
+          <p>Nosso barco foi pensado para proporcionar a melhor experiência náutica de Búzios. Amplo, seguro e equipado com tudo que você precisa para uma tarde inesquecível no mar.</p>
+          <div class="vessel__features">
+            <div class="vessel__feature">
+              <div class="vessel__feature-icon">👨‍✈️</div>
+              <div>
+                <h4>Capitão Experiente</h4>
+                <p>Capitão certificado com anos de navegação nas águas de Búzios. Sua segurança é nossa prioridade número um.</p>
+              </div>
+            </div>
+            <div class="vessel__feature">
+              <div class="vessel__feature-icon">🔥</div>
+              <div>
+                <h4>Churrasqueira a Bordo</h4>
+                <p>Serviço completo de churrasco com carne, frango, linguiça e os clássicos acompanhamentos. Grelhado fresco enquanto você aprecia a vista.</p>
+              </div>
+            </div>
+            <div class="vessel__feature">
+              <div class="vessel__feature-icon">🎵</div>
+              <div>
+                <h4>Sistema de Som</h4>
+                <p>Equipamento de áudio de qualidade com playlist tropical. Axé, pagode, reggae e os clássicos do verão carioca.</p>
+              </div>
+            </div>
+            <div class="vessel__feature">
+              <div class="vessel__feature-icon">🍺</div>
+              <div>
+                <h4>Bebidas & Snacks</h4>
+                <p>Cerveja gelada, refrigerantes, caipirinha e opções de sucos tropicais. Snacks para complementar o passeio.</p>
+              </div>
+            </div>
+            <div class="vessel__feature">
+              <div class="vessel__feature-icon">🤿</div>
+              <div>
+                <h4>Equipamento de Snorkel</h4>
+                <p>Máscaras, snorkels e nadadeiras de qualidade disponíveis a bordo para todos os participantes.</p>
+              </div>
+            </div>
+            <div class="vessel__feature">
+              <div class="vessel__feature-icon">🛟</div>
+              <div>
+                <h4>Segurança Total</h4>
+                <p>Coletes salva-vidas para todos, kit de primeiros socorros, rádio VHF e toda a documentação da Marinha em dia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vessel__visual">
+          <div class="vessel__mockup">
+            <div class="vessel__illustration">
+              <svg viewBox="0 0 400 300" class="boat-svg" xmlns="http://www.w3.org/2000/svg">
+                <!-- Water -->
+                <defs>
+                  <linearGradient id="waterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:0.8"/>
+                    <stop offset="100%" style="stop-color:#0369a1;stop-opacity:1"/>
+                  </linearGradient>
+                  <linearGradient id="boatGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#7c3aed"/>
+                    <stop offset="100%" style="stop-color:#4c1d95"/>
+                  </linearGradient>
+                  <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#bae6fd"/>
+                    <stop offset="100%" style="stop-color:#7dd3fc"/>
+                  </linearGradient>
+                </defs>
+                <!-- Sky -->
+                <rect width="400" height="180" fill="url(#skyGrad)" rx="12"/>
+                <!-- Sun -->
+                <circle cx="340" cy="50" r="28" fill="#fbbf24" opacity="0.9"/>
+                <circle cx="340" cy="50" r="22" fill="#fde68a"/>
+                <!-- Clouds -->
+                <ellipse cx="80" cy="55" rx="45" ry="20" fill="white" opacity="0.8"/>
+                <ellipse cx="60" cy="60" rx="30" ry="16" fill="white" opacity="0.8"/>
+                <ellipse cx="210" cy="40" rx="35" ry="15" fill="white" opacity="0.7"/>
+                <!-- Water -->
+                <rect x="0" y="165" width="400" height="135" fill="url(#waterGrad)" rx="0"/>
+                <!-- Water waves -->
+                <path d="M0 175 Q50 165 100 175 Q150 185 200 175 Q250 165 300 175 Q350 185 400 175" stroke="#38bdf8" fill="none" stroke-width="2" opacity="0.5"/>
+                <path d="M0 190 Q60 180 120 190 Q180 200 240 190 Q300 180 360 190 Q380 195 400 190" stroke="#38bdf8" fill="none" stroke-width="1.5" opacity="0.4"/>
+                <!-- Boat hull -->
+                <path d="M80 195 L80 230 Q200 250 320 230 L320 195 Z" fill="url(#boatGrad)"/>
+                <path d="M80 195 L320 195 L310 210 L90 210 Z" fill="#6d28d9"/>
+                <!-- Deck -->
+                <rect x="90" y="170" width="220" height="28" rx="4" fill="#e2e8f0"/>
+                <!-- Cabin -->
+                <rect x="140" y="140" width="100" height="35" rx="6" fill="#f1f5f9"/>
+                <rect x="150" y="148" width="20" height="20" rx="3" fill="#bae6fd"/>
+                <rect x="185" y="148" width="20" height="20" rx="3" fill="#bae6fd"/>
+                <rect x="220" y="148" width="10" height="20" rx="3" fill="#bae6fd"/>
+                <!-- Mast -->
+                <rect x="197" y="60" width="6" height="115" fill="#92400e"/>
+                <!-- Flag -->
+                <path d="M203 65 L240 78 L203 91 Z" fill="#ef4444"/>
+                <!-- Ropes/decorations -->
+                <line x1="90" y1="170" x2="203" y2="100" stroke="#92400e" stroke-width="1.5" opacity="0.7"/>
+                <line x1="310" y1="170" x2="203" y2="100" stroke="#92400e" stroke-width="1.5" opacity="0.7"/>
+                <!-- Snorkel person in water -->
+                <circle cx="350" cy="215" r="12" fill="#fbbf24"/>
+                <rect x="342" y="210" width="16" height="3" rx="1.5" fill="#0ea5e9"/>
+                <path d="M356 210 L365 200" stroke="#0ea5e9" stroke-width="2"/>
+                <!-- Fish -->
+                <ellipse cx="140" cy="255" rx="10" ry="6" fill="#f97316" opacity="0.8"/>
+                <path d="M130 255 L122 249 L122 261 Z" fill="#f97316" opacity="0.8"/>
+                <circle cx="145" cy="253" r="2" fill="#1e293b"/>
+                <ellipse cx="60" cy="268" rx="7" ry="4" fill="#06b6d4" opacity="0.7"/>
+                <path d="M53 268 L47 264 L47 272 Z" fill="#06b6d4" opacity="0.7"/>
+                <!-- Text -->
+                <text x="200" y="237" text-anchor="middle" font-family="Georgia" font-size="13" font-weight="bold" fill="white" opacity="0.95">B A R C O  P A Y O S</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SNORKEL & MERGULHO ===== -->
+  <section class="snorkel" id="snorkel">
+    <div class="snorkel__bg"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag section-tag--light">Embaixo d'água</span>
+        <h2 class="section-title section-title--light">Snorkel ou Mergulho?<br/>Você escolhe a aventura.</h2>
+      </div>
+      <div class="snorkel__grid">
+        <div class="snorkel__card">
+          <div class="snorkel__card-header snorkel__card-header--snorkel">
+            <span class="snorkel__icon">🤿</span>
+            <h3>Snorkel</h3>
+            <span class="snorkel__label">Incluso no passeio</span>
+          </div>
+          <ul class="snorkel__list">
+            <li>✓ Equipamento completo fornecido (máscara + snorkel + nadadeiras)</li>
+            <li>✓ Instruções básicas antes da entrada na água</li>
+            <li>✓ Guia na água durante as paradas</li>
+            <li>✓ Adequado para todas as idades (acima de 8 anos)</li>
+            <li>✓ Não precisa saber nadar (com colete)</li>
+            <li>✓ Até 3 pontos de snorkel durante o passeio</li>
+            <li>✓ Observação de corais, peixes tropicais e tartarugas</li>
+          </ul>
+          <a href="#reservar" class="btn btn--primary btn--full">Reservar com Snorkel</a>
+        </div>
+        <div class="snorkel__card snorkel__card--featured">
+          <div class="snorkel__featured-tag">Mais procurado</div>
+          <div class="snorkel__card-header snorkel__card-header--dive">
+            <span class="snorkel__icon">🥽</span>
+            <h3>Mergulho com Cilindro</h3>
+            <span class="snorkel__label">Experiência Premium</span>
+          </div>
+          <ul class="snorkel__list">
+            <li>✓ Todo equipamento de mergulho profissional</li>
+            <li>✓ Instrutor certificado PADI / SSI exclusivo</li>
+            <li>✓ Briefing completo e seguro</li>
+            <li>✓ Batismo para iniciantes (sem experiência prévia)</li>
+            <li>✓ Mergulho guiado para certificados</li>
+            <li>✓ Profundidade: até 12 metros</li>
+            <li>✓ Fotografia e vídeo subaquático disponível</li>
+            <li>✓ Pontos exclusivos: Ilha Feia e João Fernandes</li>
+          </ul>
+          <a href="#reservar" class="btn btn--accent btn--full">Reservar com Mergulho</a>
+        </div>
+      </div>
+      <div class="snorkel__note">
+        <span>🐠</span>
+        <p>Nas águas de Búzios você pode encontrar: polvos, arraias, tartarugas, peixe-papagaio, barracuda, estrela-do-mar, corais cérebro, corais ramificados e muito mais.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DEPOIMENTOS ===== -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Depoimentos</span>
+        <h2 class="section-title">O que dizem nossos passageiros</h2>
+      </div>
+      <div class="reviews__grid">
+        <div class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <p>"Experiência incrível! As águas de João Fernandes são transparentes demais. Vi um polvo pela primeira vez na vida. O churrasco a bordo também estava delicioso. Equipe super profissional!"</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">MC</div>
+            <div>
+              <strong>Mariana Castro</strong>
+              <span>São Paulo, SP</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <p>"Fiz o mergulho com cilindro na Ilha Feia — simplesmente inexplicável. O instrutor foi paciente, me explicou tudo com calma. Nadei com arraias! Volta em Búzios sem ir com o Barco Payos não vale."</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">RO</div>
+            <div>
+              <strong>Ricardo Oliveira</strong>
+              <span>Belo Horizonte, MG</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <p>"Levei toda a família, filhos de 9 e 12 anos. Todos adoraram! O snorkel foi a parte favorita das crianças. O capitão é muito atencioso e a música animou o trajeto. Recomendo de olhos fechados!"</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">AS</div>
+            <div>
+              <strong>Ana Silva</strong>
+              <span>Rio de Janeiro, RJ</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <p>"Vine desde Buenos Aires especialmente para esto. La Praia da Tartaruga es un paraíso. El equipo habla español muy bien. El churrasco era una maravilla. ¡Volveré el año que viene sin dudas!"</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">LP</div>
+            <div>
+              <strong>Lucas Pérez</strong>
+              <span>Buenos Aires, AR</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PREÇOS ===== -->
+  <section class="pricing" id="precos">
+    <div class="pricing__bg"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag section-tag--light">Preços</span>
+        <h2 class="section-title section-title--light">Transparência desde o início</h2>
+        <p class="section-subtitle section-subtitle--light">Sem surpresas. Tudo que você vai curtir está incluído.</p>
+      </div>
+      <div class="pricing__grid">
+        <div class="pricing-card">
+          <h3>Passeio + Snorkel</h3>
+          <div class="pricing-card__price">
+            <span class="pricing-card__currency">R$</span>
+            <span class="pricing-card__value">290</span>
+            <span class="pricing-card__per">/ pessoa</span>
+          </div>
+          <ul class="pricing-card__list">
+            <li>✓ 3 horas de passeio</li>
+            <li>✓ 3 paradas de snorkel</li>
+            <li>✓ Equipamento de snorkel</li>
+            <li>✓ Guia na água</li>
+            <li>✓ Churrasco completo</li>
+            <li>✓ Bebidas (cerveja, refri, suco)</li>
+            <li>✓ Sistema de som</li>
+            <li>✓ Capitão certificado</li>
+          </ul>
+          <a href="#reservar" class="btn btn--outline">Reservar Snorkel</a>
+        </div>
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-card__badge">Mais popular</div>
+          <h3>Passeio + Mergulho</h3>
+          <div class="pricing-card__price">
+            <span class="pricing-card__currency">R$</span>
+            <span class="pricing-card__value">490</span>
+            <span class="pricing-card__per">/ pessoa</span>
+          </div>
+          <ul class="pricing-card__list">
+            <li>✓ Tudo do plano Snorkel</li>
+            <li>✓ Mergulho com cilindro</li>
+            <li>✓ Instrutor certificado PADI</li>
+            <li>✓ Batismo ou mergulho guiado</li>
+            <li>✓ 1 cilindro de ar</li>
+            <li>✓ Equipamento completo de mergulho</li>
+            <li>✓ Foto e vídeo subaquático</li>
+            <li>✓ Profundidade até 12m</li>
+          </ul>
+          <a href="#reservar" class="btn btn--primary">Reservar Mergulho</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Grupo Privativo</h3>
+          <div class="pricing-card__price">
+            <span class="pricing-card__currency"></span>
+            <span class="pricing-card__value" style="font-size:2rem">Consultar</span>
+          </div>
+          <ul class="pricing-card__list">
+            <li>✓ Barco exclusivo para seu grupo</li>
+            <li>✓ Itinerário personalizado</li>
+            <li>✓ Até 20 pessoas</li>
+            <li>✓ Snorkel + Mergulho disponível</li>
+            <li>✓ Aniversários e eventos</li>
+            <li>✓ Listas de reprodução personalizadas</li>
+            <li>✓ Menu especial sob consulta</li>
+            <li>✓ Fotógrafo profissional opcional</li>
+          </ul>
+          <a href="#reservar" class="btn btn--outline">Solicitar Orçamento</a>
+        </div>
+      </div>
+      <p class="pricing__note">* Crianças até 5 anos: gratuito. De 6 a 11 anos: 50% de desconto. Preços sujeitos a alteração em alta temporada.</p>
+    </div>
+  </section>
+
+  <!-- ===== RESERVAR ===== -->
+  <section class="booking" id="reservar">
+    <div class="container">
+      <div class="booking__grid">
+        <div class="booking__info">
+          <span class="section-tag">Reservas</span>
+          <h2 class="section-title">Pronto para mergulhar em Búzios?</h2>
+          <p>Entre em contato e nossa equipe responde em até 2 horas. Também atendemos pelo WhatsApp para agilizar sua reserva.</p>
+          <div class="booking__contact">
+            <a href="https://wa.me/5522999999999?text=Olá!%20Quero%20reservar%20um%20passeio%20no%20Barco%20Payos%20em%20Búzios!" class="booking__whatsapp" target="_blank" rel="noopener">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Falar pelo WhatsApp
+            </a>
+            <div class="booking__info-items">
+              <div class="booking__info-item">
+                <span class="booking__info-icon">📍</span>
+                <div>
+                  <strong>Onde embarcar</strong>
+                  <span>Porto Veleiro, Armação dos Búzios – RJ</span>
+                </div>
+              </div>
+              <div class="booking__info-item">
+                <span class="booking__info-icon">🕗</span>
+                <div>
+                  <strong>Horário de saída</strong>
+                  <span>08:30 · Dias úteis e fins de semana</span>
+                </div>
+              </div>
+              <div class="booking__info-item">
+                <span class="booking__info-icon">👥</span>
+                <div>
+                  <strong>Grupo mínimo</strong>
+                  <span>4 pessoas (ou valor mínimo)</span>
+                </div>
+              </div>
+              <div class="booking__info-item">
+                <span class="booking__info-icon">🌦️</span>
+                <div>
+                  <strong>Cancelamento</strong>
+                  <span>Gratuito em caso de mau tempo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="booking__form-wrap">
+          <form class="booking__form" id="bookingForm">
+            <h3>Solicitar Reserva</h3>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="name">Nome completo</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required />
+              </div>
+              <div class="form__group">
+                <label for="phone">WhatsApp / Telefone</label>
+                <input type="tel" id="phone" name="phone" placeholder="+55 (22) 99999-9999" required />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="date">Data desejada</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form__group">
+                <label for="people">Nº de pessoas</label>
+                <input type="number" id="people" name="people" min="1" max="20" placeholder="4" required />
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="modality">Modalidade</label>
+              <select id="modality" name="modality">
+                <option value="">Selecione...</option>
+                <option value="snorkel">Passeio + Snorkel (R$ 290/pessoa)</option>
+                <option value="mergulho">Passeio + Mergulho com Cilindro (R$ 490/pessoa)</option>
+                <option value="privativo">Barco Privativo (sob consulta)</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="message">Observações (opcional)</label>
+              <textarea id="message" name="message" rows="3" placeholder="Informe alergias alimentares, crianças, necessidades especiais..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              Enviar Solicitação de Reserva 🤿
+            </button>
+            <p class="form__disclaimer">Responderemos em até 2 horas pelo WhatsApp ou e-mail.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#hero" class="nav__logo footer__logo">
+            <span class="nav__logo-icon">⚓</span>
+            <span>Barco <strong>Payos</strong></span>
+          </a>
+          <p>Passeios de barco com snorkel e mergulho nas águas cristalinas de Búzios. Herdeiro da tradição de <em>Vídeo Azul Profundo</em> no turismo náutico búziano.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#about">Nossa História</a></li>
+            <li><a href="#passeio">O Passeio</a></li>
+            <li><a href="#pontos">Destinos</a></li>
+            <li><a href="#barco">O Barco</a></li>
+            <li><a href="#snorkel">Snorkel & Mergulho</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Informações</h4>
+          <ul>
+            <li><a href="#precos">Preços</a></li>
+            <li><a href="#reviews">Depoimentos</a></li>
+            <li><a href="#reservar">Reservas</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4>Contato</h4>
+          <p>📍 Porto Veleiro<br/>Armação dos Búzios – RJ</p>
+          <p>📱 WhatsApp:<br/><a href="https://wa.me/5522999999999">(22) 9 9999-9999</a></p>
+          <p>🕗 Saídas: 08:30<br/>Todos os dias (sujeito ao clima)</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Barco Payos · Passeios Náuticos em Búzios. Todos os direitos reservados.</p>
+        <p>Herdeiro da tradição <em>Vídeo Azul Profundo</em> · Armação dos Búzios – RJ</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Success modal -->
+  <div class="modal" id="successModal">
+    <div class="modal__box">
+      <span class="modal__icon">🎉</span>
+      <h3>Solicitação enviada!</h3>
+      <p>Recebemos seu pedido de reserva. Nossa equipe entrará em contato pelo WhatsApp em até 2 horas para confirmar a disponibilidade.</p>
+      <p><strong>Até breve nas águas de Búzios!</strong> 🤿</p>
+      <button class="btn btn--primary" onclick="document.getElementById('successModal').classList.remove('modal--open')">Fechar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
