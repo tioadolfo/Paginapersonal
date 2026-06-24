@@ -72,6 +72,7 @@ form.addEventListener('submit', e => {
   const modalityMap = {
     snorkel: 'Passeio + Snorkel — R$ 200/pessoa',
     mergulho: 'Passeio + Mergulho com Cilindro — R$ 350/pessoa',
+    praia: 'Passeio Guiado de Praia — sob consulta',
     privativo: 'Grupo Privativo — sob consulta'
   };
 

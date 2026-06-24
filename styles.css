@@ -761,7 +761,7 @@ a { text-decoration: none; color: inherit; }
 
 .modalities {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   background: var(--line);
   border: 1px solid var(--line);
@@ -813,6 +813,7 @@ a { text-decoration: none; color: inherit; }
 }
 .modality__badge--green { border-color: rgba(52,211,153,0.4); color: #34d399; }
 .modality__badge--teal  { border-color: var(--aqua); color: var(--aqua-light); }
+.modality__badge--warm  { border-color: rgba(192,154,56,0.5); color: var(--gold-light); }
 
 .modality__list { list-style: none; margin-bottom: 36px; display: flex; flex-direction: column; gap: 11px; }
 .modality__list li {
@@ -1199,6 +1200,7 @@ a { text-decoration: none; color: inherit; }
   .vessel__feature:nth-child(4),
   .vessel__feature:nth-child(5) { grid-column: span 1 !important; }
 
+  .modalities { grid-template-columns: 1fr; }
   .booking__grid { grid-template-columns: 1fr; gap: 48px; }
   .footer__top { grid-template-columns: 1fr 1fr; }
 }
